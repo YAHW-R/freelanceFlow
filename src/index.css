@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+.hero-gradient {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.transition-smooth {
+  transition: all 0.3s ease;
+}
+
+/* Definir retrasos personalizados */
+.animate__delay-0-1s {
+  animation-delay: 0.2s;
+}
+
+.animate__delay-0-2s {
+  animation-delay: 0.4s;
+}
+
+.animate__delay-0-3s {
+  animation-delay: 0.6s;
+}
+
+.animate__delay-0-4s {
+  animation-delay: 0.8s;
+}
+
+.animate__delay-0-5s {
+  animation-delay: 1s;
+}
+
+.animate__delay-0-6s {
+  animation-delay: 1.2s;
+}
+
+.animate__delay-0-7s {
+  animation-delay: 1.4s;
+}
