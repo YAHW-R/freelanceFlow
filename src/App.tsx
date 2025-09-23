@@ -3,11 +3,13 @@ import "animate.css"
 
 import Navbar from './components/Navbar'
 
-import HomePage from './pages/Home'
-import FunctionPage from './pages/Functions'
-import PricesPage from './pages/Prices'
-import BlogPage from './pages/Blog'
-import ContactPage from './pages/Contact'
+//public
+import HomePage from './pages/publics/Home'
+import FunctionPage from './pages/publics/Functions'
+import PricesPage from './pages/publics/Prices'
+import BlogPage from './pages/publics/Blog'
+import ContactPage from './pages/publics/Contact'
+import Demo from './pages/publics/Demo'
 
 //auth
 import RegisterPage from './pages/auth/Register'
@@ -31,6 +33,7 @@ function App() {
         <Route path='/prices' element={<PricesPage />} />
         <Route path='/blog' element={<BlogPage />} />
         <Route path='/contact' element={<ContactPage />} />
+        <Route path='/demo' element={<Demo />} />
         <Route path='/register' element={<RegisterPage />} />
         <Route path='/login' element={<LoginPage />} />
       </Routes>

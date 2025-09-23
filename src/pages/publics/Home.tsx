@@ -1,13 +1,13 @@
 import { useEffect } from 'react'
 import feather from 'feather-icons'
 
-import Hero from '../components/HomePage/sections/Hero'
-import Feutures from '../components/HomePage/sections/Feutures'
-import Dashboard from '../components/HomePage/sections/Dashboard'
+import Hero from '../../components/HomePage/sections/Hero'
+import Feutures from '../../components/HomePage/sections/Feutures'
+import Dashboard from '../../components/HomePage/sections/Dashboard'
 
-import Testimonials from '../components/HomePage/sections/Testimonial'
-import CTA from '../components/HomePage/sections/CTA'
-import Footer from '../components/HomePage/sections/Footer'
+import Testimonials from '../../components/HomePage/sections/Testimonial'
+import CTA from '../../components/HomePage/sections/CTA'
+import Footer from '../../components/HomePage/sections/Footer'
 
 
 

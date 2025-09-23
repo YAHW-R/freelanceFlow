@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ScrollAnimation from "../components/ScrollAnimation";
+import ScrollAnimation from "../../components/ScrollAnimation";
 
 interface ContactFormData {
     name: string;
