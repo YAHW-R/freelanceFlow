@@ -37,7 +37,7 @@ export default function BlogPage() {
     return (
         <div className="min-h-screen bg-gray-50 flex flex-col">
             <main className="flex-grow px-6 py-12 max-w-5xl mx-auto">
-                <h1 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+                <h1 className="text-3xl font-bold text-gray-900 mb-8 text-center animate__animated animate__fadeInUp">
                     Blog de FreelanceHub
                 </h1>
 
@@ -49,7 +49,7 @@ export default function BlogPage() {
                     {dummyPosts.map((post) => (
                         <article
                             key={post.id}
-                            className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition"
+                            className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition animate__animated animate__fadeInUp animate__delay-0-1s"
                         >
                             <h2 className="text-xl font-semibold text-indigo-600 mb-2">
                                 {post.title}

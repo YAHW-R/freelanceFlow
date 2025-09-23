@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ScrollAnimation from "../components/ScrollAnimation";
 
 interface ContactFormData {
     name: string;
@@ -59,13 +60,13 @@ export default function ContactPage() {
         <div className="min-h-screen bg-gray-50 flex flex-col">
 
             <main className="flex-grow px-6 py-12 max-w-5xl mx-auto">
-                <h1 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+                <h1 className="text-3xl font-bold text-gray-900 mb-8 text-center animate__animated animate__fadeInUp">
                     Contáctanos
                 </h1>
 
                 {/* Opciones de contacto */}
                 <section className="mb-12 grid md:grid-cols-3 gap-6">
-                    <div className="bg-white p-6 rounded-xl shadow">
+                    <div className="bg-white p-6 rounded-xl shadow animate__animated animate__fadeInUp animate__delay-0-1s">
                         <h3 className="text-lg font-semibold text-indigo-600">
                             Soporte técnico
                         </h3>
@@ -78,7 +79,7 @@ export default function ContactPage() {
                         </a>
                     </div>
 
-                    <div className="bg-white p-6 rounded-xl shadow">
+                    <div className="bg-white p-6 rounded-xl shadow animate__animated animate__fadeInUp animate__delay-0-2s">
                         <h3 className="text-lg font-semibold text-indigo-600">
                             Consultas comerciales
                         </h3>
@@ -90,7 +91,7 @@ export default function ContactPage() {
                         </a>
                     </div>
 
-                    <div className="bg-white p-6 rounded-xl shadow">
+                    <div className="bg-white p-6 rounded-xl shadow animate__animated animate__fadeInUp animate__delay-0-3s">
                         <h3 className="text-lg font-semibold text-indigo-600">Empresas</h3>
                         <p className="text-gray-700">Soluciones personalizadas</p>
                         <a
@@ -103,7 +104,7 @@ export default function ContactPage() {
                 </section>
 
                 {/* Formulario de contacto */}
-                <section className="mb-12 bg-white p-8 rounded-xl shadow">
+                <section className="mb-12 bg-white p-8 rounded-xl shadow animate__animated animate__fadeInUp aniamte__delay-0-4s">
                     <h2 className="text-2xl font-bold text-gray-900 mb-6">
                         Envíanos un mensaje
                     </h2>
@@ -190,7 +191,7 @@ export default function ContactPage() {
                 </section>
 
                 {/* Información adicional */}
-                <section className="mb-12">
+                <ScrollAnimation animation="animate__fadeInUp" className="mb-12">
                     <h2 className="text-2xl font-bold text-gray-900 mb-4">
                         Información adicional
                     </h2>
@@ -203,10 +204,10 @@ export default function ContactPage() {
                     <p className="text-gray-700">
                         <strong>Horario de atención:</strong> Lunes a Viernes, 9:00 a 18:00
                     </p>
-                </section>
+                </ScrollAnimation>
 
                 {/* FAQ */}
-                <section className="mb-12">
+                <ScrollAnimation animation="animate__fadeInUp" className="mb-12">
                     <h2 className="text-2xl font-bold text-gray-900 mb-4">
                         Preguntas frecuentes
                     </h2>
@@ -224,7 +225,7 @@ export default function ContactPage() {
                             pronto disponible para planes Pro y Business.
                         </li>
                     </ul>
-                </section>
+                </ScrollAnimation>
             </main>
         </div>
     );
